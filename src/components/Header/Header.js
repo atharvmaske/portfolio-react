@@ -1,24 +1,15 @@
-import { header } from '../../portfolio'
-import Navbar from '../Navbar/Navbar'
-import './Header.css'
+import './Header.css';
+import Navbar from '../Navbar/Navbar';
 
-const Header = () => {
-  const { homepage, title } = header
+const Header = () => (
+  <header className='header center'>
+    <h3>
+      <a href="https://your-website.com" className='link'>
+        Atharv Maske
+      </a>
+    </h3>
+    <Navbar />
+  </header>
+);
 
-  return (
-    <header className='header center'>
-      <h3>
-        {homepage ? (
-          <a href={homepage} className='link'>
-            {title}
-          </a>
-        ) : (
-          title
-        )}
-      </h3>
-      <Navbar />
-    </header>
-  )
-}
-
-export default Header
+export default Header;

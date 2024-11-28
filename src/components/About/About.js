@@ -1,57 +1,40 @@
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import { about } from '../../portfolio'
-import './About.css'
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import './About.css';
 
-const About = () => {
-  const { name, role, description, resume, social } = about
+const About = () => (
+  <div className='about center'>
+    <h1>
+      Hi, I am <span className='about__name'>Atharv Maske</span>.
+    </h1>
 
-  return (
-    <div className='about center'>
-      {name && (
-        <h1>
-          Hi, I am <span className='about__name'>{name}.</span>
-        </h1>
-      )}
+    <h2 className='about__role'>Front-end Dev.</h2>
+    <p className='about__desc'>I am a frontend developer and a second-year student, passionate about building user-friendly web applications. I am dedicated to enhancing my problem-solving skills, which I believe are essential for writing efficient code and tackling complex programming challenges.</p>
 
-      {role && <h2 className='about__role'>A {role}.</h2>}
-      <p className='about__desc'>{description && description}</p>
+    <div className='about__contact center'>
+      <a href='https://blush-roseanna-29.tiiny.site'>
+        <span type='button' className='btn btn--outline'>
+          Resume
+        </span>
+      </a>
 
-      <div className='about__contact center'>
-        {resume && (
-          <a href={resume}>
-            <span type='button' className='btn btn--outline'>
-              Resume
-            </span>
-          </a>
-        )}
+      <a
+        href='https://github.com/atharvmaske'
+        aria-label='github'
+        className='link link--icon'
+      >
+        <GitHubIcon />
+      </a>
 
-        {social && (
-          <>
-            {social.github && (
-              <a
-                href={social.github}
-                aria-label='github'
-                className='link link--icon'
-              >
-                <GitHubIcon />
-              </a>
-            )}
-
-            {social.linkedin && (
-              <a
-                href={social.linkedin}
-                aria-label='linkedin'
-                className='link link--icon'
-              >
-                <LinkedInIcon />
-              </a>
-            )}
-          </>
-        )}
-      </div>
+      <a
+        href='https://www.linkedin.com/in/atharv-maske-61a983257/'
+        aria-label='linkedin'
+        className='link link--icon'
+      >
+        <LinkedInIcon />
+      </a>
     </div>
-  )
-}
+  </div>
+);
 
-export default About
+export default About;

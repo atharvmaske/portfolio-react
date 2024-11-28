@@ -21,28 +21,28 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
+    name: 'TripPlanner',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'TripPlanner is an AI-driven website that generates personalized travel itineraries based on your budget and group size, using Gemini AI for smart, tailored recommendations.',
+    stack: ['CSS', 'React', 'Firebase'],
+    sourceCode: 'https://github.com/atharvmaske/tripPlanner',
+    livePreview: 'https://github.com/atharvmaske/tripPlanner',
   },
   {
-    name: 'Project 2',
+    name: 'sheRide',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'sheRide is a women’s safety-focused ride-sharing app, similar to Uber and Ola, with female drivers to ensure a secure and comfortable experience for female passengers.',
+    stack: ['CSS', 'Firebase', 'React'],
+    sourceCode: 'https://github.com/atharvmaske/sheride',
+    livePreview: 'https://github.com/atharvmaske/sheride',
   },
   {
-    name: 'Project 3',
+    name: 'News',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'This news app lets users choose from various categories to customize their news feed, ensuring they stay updated on topics that matter most to them.',
     stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    sourceCode: 'https://github.com/atharvmaske/news',
+    livePreview: 'https://github.com/atharvmaske/news',
   },
 ]
 

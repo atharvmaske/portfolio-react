@@ -1,22 +1,20 @@
-import uniqid from 'uniqid'
-import { skills } from '../../portfolio'
-import './Skills.css'
+import React from 'react';
+import './Skills.css';
 
-const Skills = () => {
-  if (!skills.length) return null
+const Skills = () => (
+  <section className='section skills' id='skills'>
+    <h2 className='section__title'>Skills</h2>
+    <div className='skills__list'>
+      <span className='btn btn--outline'>JavaScript</span>
+      <span className='btn btn--outline'>React</span>
+      <span className='btn btn--outline'>HTML</span>
+      <span className='btn btn--outline'>CSS</span>
+      <span className='btn btn--outline'>JAVA</span>
+      <span className='btn btn--outline'>Git</span>
+      <span className='btn btn--outline'>BOOTSTRAP</span>
+      <span className='btn btn--outline'>MYSQL</span>
+    </div>
+  </section>
+);
 
-  return (
-    <section className='section skills' id='skills'>
-      <h2 className='section__title'>Skills</h2>
-      <ul className='skills__list'>
-        {skills.map((skill) => (
-          <li key={uniqid()} className='skills__list-item btn btn--plain'>
-            {skill}
-          </li>
-        ))}
-      </ul>
-    </section>
-  )
-}
-
-export default Skills
+export default Skills;
